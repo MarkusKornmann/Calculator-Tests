@@ -2,6 +2,7 @@
   "test": "module",
   "dependencies": {
     "chai": "^5.1.2",
+    "chalk": "^5.3.0",
     "chromedriver": "^131.0.3",
     "mocha": "^11.0.1",
     "selenium-webdriver": "^4.27.0"
