@@ -9,10 +9,7 @@ describe("Calculator App Tests", function () { let driver;
     await driver.get("https://seleniumbase.io/apps/calculator"); await driver.findElement(By.id("7")).click();
     await driver.findElement(By.xpath(`//*[@id="multiply"]`)).click(); await driver.findElement(By.id("4")).click();
     await driver.findElement(By.id("equal")).click();
-    const Rechner = await driver
-      .findElement(By.id("output"))
-      .getAttribute("value");
-    assert.strictEqual(Rechner, "28");
+    const Rechner = await driver.findElement(By.id("output")).getAttribute("value"); assert.strictEqual(Rechner, "28");
   });
   Masko;
 });
